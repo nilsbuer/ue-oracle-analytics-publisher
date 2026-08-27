@@ -3,6 +3,7 @@
     "analysis/extension-designer",
     "analysis/requirements-composer",
     "analysis/requirements-refiner",
+    "implementation",
     "init"
   ]
 }

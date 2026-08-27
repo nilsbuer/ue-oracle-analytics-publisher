@@ -1,8 +1,11 @@
 #
 # Specify any third-party Python modules that should be bundled with the
 # extension. uip-cli will automatically download and bundle the modules
-# upon running `uip build` or `uip push`. 
+# upon running `uip build` or `uip push`.
 #
 # Refer to https://pip.pypa.io/en/stable/reference/requirements-file-format/
 # for the expected format.
 #
+certifi==2026.7.22
+requests==2.34.2
+tabulate==0.10.0
