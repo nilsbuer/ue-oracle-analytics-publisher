@@ -1,5 +1,6 @@
 {
   "completed_stages": [
+    "analysis/requirements-refiner",
     "init"
   ]
 }
