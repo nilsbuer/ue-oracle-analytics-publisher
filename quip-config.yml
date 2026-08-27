@@ -1,0 +1,30 @@
+defaults:
+  template: ue-task-ca
+  icon_font: cour.ttf
+  use_keyring: true
+external:
+  gitlab:
+    url: https://gitlab.stonebranch.com
+    ssl_verify: false
+    username: len
+    default_group: cs-uac
+    groups:
+    - cs-uac
+    protected_branch:
+      name: main
+      merge: DEVELOPER
+      push: NO_ACCESS
+    default_branch: develop
+    git-init: true
+extension.yml:
+  extension:
+    name: ue-oracle-analytics-publisher
+    version: 1.0.0
+    api_level: 1.6.0
+    requires_python: '>=3.11'
+  owner:
+    name: ISS
+    organization: Stonebranch
+uip.yml:
+  userid: len
+  url: https://ps1.stonebranchdev.cloud

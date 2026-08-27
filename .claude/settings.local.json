@@ -1,0 +1,30 @@
+{
+  "env": {
+    "DISABLE_AUTOUPDATER": "1",
+    "CLAUDE_CODE_DISABLE_1M_CONTEXT": 1,
+    "CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION":false
+  },
+  "permissions": {
+    "allow": [
+      "Skill",
+      "Bash",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "TodoWrite",
+      "Task",
+      "WebFetch",
+      "WebSearch",
+      "LSP",
+      "NotebookEdit",
+      "KillShell",
+      "AskUserQuestion",
+      "EnterPlanMode",
+      "ExitPlanMode",
+      "TaskOutput",
+      "Bash(pip install:*)"
+    ]
+  }
+}

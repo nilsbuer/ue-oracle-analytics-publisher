@@ -1,0 +1,8 @@
+ue-dev-env/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+pipeline-logs/
+pipeline-failure.log

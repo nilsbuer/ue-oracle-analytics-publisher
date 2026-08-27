@@ -1,0 +1,8 @@
+#
+# Specify any third-party Python modules that should be bundled with the
+# extension. uip-cli will automatically download and bundle the modules
+# upon running `uip build` or `uip push`. 
+#
+# Refer to https://pip.pypa.io/en/stable/reference/requirements-file-format/
+# for the expected format.
+#

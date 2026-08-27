@@ -1,0 +1,333 @@
+#
+# (c) Copyright 2023 Stonebranch, Inc., All rights reserved.
+#
+# Stonebranch, Inc.
+# Universal Integration Platform Command Line Utility Configuration File
+# 2.1.1
+#
+# This configuration file specifies options used by the UIP CLI. The options
+# and their values must be specified in proper YAML format as shown below.
+#
+#
+# 'login' options:
+####################
+# Option: userid
+# Default: None
+#
+#   Used to specify the user id needed to log into the Controller
+#
+#   Examples:
+#     userid: admin
+#
+#
+# Option: url
+# Default: None
+#
+#   Used to specify the url needed to connect to the Controller
+#
+#   Examples:
+#     url: http://localhost:8080/uc
+#
+###############################################################################
+###############################################################################
+#
+# 'init' command options:
+##########################
+# Option: variables
+# Default: None
+#
+#   The 'variables' option is used to configure the starter templates
+#   based on the options provided.
+#
+#   There are two ways to specify the options
+#     - JSON string:
+#     - JSON/YAML file:
+#
+#   JSON string examples:
+#     variables: '{"extension_name": "my_extension"}'
+#
+#   JSON/YAML file examples:
+#     variables: '@test.json'
+#     variables: '@C:\Users\SampleUser\Documents\test.yml'
+#
+###############################################################################
+###############################################################################
+#
+# 'build' command options:
+############################
+# Option: build-all
+# Default: False
+#
+#   The 'build-all' option is used to specify whether a full package build or
+#   only extension build is generated.
+#
+#   There are multiple ways to specify the option:
+#     - True/yes: if specified, full package build will be generated
+#     - False/no: if specified, only extension build will be generated
+#
+#   Note that 'True/yes' and 'False/no' are case-insensitive
+#
+#   Examples:
+#     build-all: false
+#     build-all: yes
+#     build-all: TRUE
+#     build-all: NO
+#
+# Option: dep-whl-only
+# Default: False
+#
+#   If specified, only the dependency wheel file will be generated. This option
+#   is applicable only if the 'zip_safe' option is 'False' in extension.yml
+#
+#   There are multiple ways to specify the option:
+#     - True/yes
+#     - False/no
+#
+#   Note that 'True/yes' and 'False/no' are case-insensitive
+#
+#   Examples:
+#     dep-whl-only: false
+#     dep-whl-only: yes
+#     dep-whl-only: TRUE
+#     dep-whl-only: NO
+#
+# Option: build-stable-abi
+# Default: False
+#
+#   If specified, the dependency wheel file will be built with the stable
+#   ABI tag. This is only possible if all dependencies specified in the
+#   requirements.txt file have the stable ABI tag.
+#
+#   There are multiple ways to specify the option:
+#     - True/yes
+#     - False/no
+#
+#   Note that 'True/yes' and 'False/no' are case-insensitive
+#
+#   Examples:
+#     build-stable-abi: false
+#     build-stable-abi: yes
+#     build-stable-abi: TRUE
+#     build-stable-abi: NO
+#
+# Option: build-force-stable-abi
+# Default: False
+#
+#   If specified, the dependency wheel file will be built with the stable
+#   ABI tag, even if not all dependencies have the stable ABI tag. Use
+#   with caution, as an incorrectly tagged wheel file may not work
+#   correctly.
+#
+#   There are multiple ways to specify the option:
+#     - True/yes
+#     - False/no
+#
+#   Note that 'True/yes' and 'False/no' are case-insensitive
+#
+#   Examples:
+#     build-force-stable-abi: false
+#     build-force-stable-abi: yes
+#     build-force-stable-abi: TRUE
+#     build-force-stable-abi: NO
+#
+###############################################################################
+###############################################################################
+#
+# 'upload' command options:
+#############################
+# Option: upload-all
+# Default: False
+#
+#   The 'upload-all' option is used to specify whether the full package or
+#   only extension is uploaded to the Controller. It is expected that the
+#   files to upload are already present/built. See the 'push' command for
+#   a combination of build and upload.
+#
+#   There are multiple ways to specify the option:
+#     - True/yes: if specified, full package upload will be uploaded
+#     - False/no: if specified, only extension upload will be uploaded
+#
+#   Note that 'True/yes' and 'False/no' are case-insensitive
+#
+#   Examples:
+#     upload-all: false
+#     upload-all: yes
+#     upload-all: TRUE
+#     upload-all: NO
+#
+###############################################################################
+###############################################################################
+#
+# 'push' command options:
+###########################
+# Option: push-all
+# Default: False
+#
+#   The 'push-all' option is used to specify whether the full package or
+#   only extension is built AND uploaded to the Controller.
+#
+#   There are multiple ways to specify the option:
+#     - True/yes: if specified, full package will be built and uploaded
+#     - False/no: if specified, only extension will be built and uploaded
+#
+#   Note that 'True/yes' and 'False/no' are case-insensitive
+#
+#   Examples:
+#     push-all: false
+#     push-all: yes
+#     push-all: TRUE
+#     push-all: NO
+#
+# Option: push-stable-abi
+# Default: False
+#
+#   If specified, the dependency wheel file will be built and uploaded 
+#   with the stable ABI tag. This is only possible if all dependencies
+#   specified in the requirements.txt file have the stable ABI tag.
+#
+#   There are multiple ways to specify the option:
+#     - True/yes
+#     - False/no
+#
+#   Note that 'True/yes' and 'False/no' are case-insensitive
+#
+#   Examples:
+#     push-stable-abi: false
+#     push-stable-abi: yes
+#     push-stable-abi: TRUE
+#     push-stable-abi: NO
+#
+# Option: push-force-stable-abi
+# Default: False
+#
+#   If specified, the dependency wheel file will be built and uploaded 
+#   with the stable ABI tag, even if not all dependencies have the stable
+#   ABI tag. Use with caution, as an incorrectly tagged wheel file may not
+#   work correctly.
+#
+#   There are multiple ways to specify the option:
+#     - True/yes
+#     - False/no
+#
+#   Note that 'True/yes' and 'False/no' are case-insensitive
+#
+#   Examples:
+#     push-force-stable-abi: false
+#     push-force-stable-abi: yes
+#     push-force-stable-abi: TRUE
+#     push-force-stable-abi: NO
+#
+###############################################################################
+###############################################################################
+#
+# 'download' command options:
+################################
+# Option: template-name
+# Default: None (name fetched from template.json)
+#
+#   The 'template-name' option is used to specify the name of the Universal
+#   Template to download from the Controller.
+#
+#   Examples:
+#     template-name: ue-task
+#
+###############################################################################
+###############################################################################
+#
+# 'task launch' command options:
+################################
+# Option: no-wait
+# Default: False
+#
+#   The 'no-wait' option is used to specify whether the 'task launch' command
+#   should keep printing the status of the launched task or not. By default,
+#   the value is False which means the 'task launch' command WILL keep 
+#   printing the status. The printing will stop when the task status is one of:
+#     - Success
+#     - Finished
+#     - Failed
+#     - Cancelled
+#     - Start Failure
+#     - Undeliverable
+#     - In Doubt
+#     - Skipped
+#
+#   Examples:
+#     no-wait: false
+#     no-wait: yes
+#     no-wait: TRUE
+#     no-wait: NO
+#
+###############################################################################
+###############################################################################
+#
+# 'task status' command options:
+################################
+# Option: num-instances
+# Default: 1
+#
+#   The 'num-instances' option is used to specify the number of task instances
+#   to get the status of. If a nonpositive value is provided, the status of 
+#   all the task instances will be returned. 
+#
+#   Examples:
+#     num-instances: 5
+#     num-instances: -42
+#
+###############################################################################
+###############################################################################
+#
+# 'task output' command options:
+################################
+# Option: instance-number
+# Default: Most recent task instance
+#
+#   The 'instance-number' option is used to specify the task instance number 
+#   of the task instance to get the output of. By default, if no value is 
+#   specified, the output of the most recent task instance will be returned.
+#
+#   Examples:
+#     instance-number: 5
+#     instance-number: 132
+#
+###############################################################################
+###############################################################################
+#
+# 'clean' command options:
+###########################
+# Option: clean-all
+# Default: False
+#
+#   The 'clean-all' option is used to specify whether the 3pp folder should be
+#   purged or not. By itself, the clean purges the build and dist folders.
+#   If 'clean-all' is specified, the 3pp folder will also be purged.
+#
+#   There are multiple ways to specify the option:
+#     - True/yes
+#     - False/no
+#
+#   Note that 'True/yes' and 'False/no' are case-insensitive
+#
+#   Examples:
+#     clean-all: false
+#     clean-all: yes
+#     clean-all: TRUE
+#     clean-all: NO
+#
+###############################################################################
+###############################################################################
+#
+# Configuration Options Section
+#
+###############################################################################
+#
+# userid: <userid>
+# url: <url>
+# variables: <JSON string | JSON/YAML file>
+# build-all: <yes/no>
+# upload-all: <yes/no>
+# push-all: <yes/no>
+# template-name: <name>
+# no-wait: <yes/no>
+# num-instances: <integer> 
+# instance-number: <integer>
