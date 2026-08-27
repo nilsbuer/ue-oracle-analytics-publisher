@@ -1,0 +1,11 @@
+extension:
+  name: ue-oracle-analytics-publisher
+  version: "1.0.0"
+  api_level: "1.6.0"
+  requires_python: ">=3.11"
+  zip_safe: False
+owner:
+  name: ISS
+  organization: Stonebranch
+comments: |
+  Created using ue-task template

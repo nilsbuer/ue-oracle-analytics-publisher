@@ -1,0 +1,13 @@
+2026-08-27 13:13:05 - Hook script started
+2026-08-27 13:13:05 - Received stdin data: {"session_id":"c20e2b30-7676-4217-8ce8-ed9e55efdb77","transcript_path":"/tmp/.claude/projects/-tmp-ue-oracle-analytics-publisher-extension-code/c20e2b30-7676-4217-8ce8-ed9e55efdb77.jsonl","cwd":"/tmp/ue-oracle-analytics-publisher/extension-code","hook_event_name":"SessionStart","source":"startup"}
+
+2026-08-27 13:13:05 - Parsed event data: {
+  "session_id": "c20e2b30-7676-4217-8ce8-ed9e55efdb77",
+  "transcript_path": "/tmp/.claude/projects/-tmp-ue-oracle-analytics-publisher-extension-code/c20e2b30-7676-4217-8ce8-ed9e55efdb77.jsonl",
+  "cwd": "/tmp/ue-oracle-analytics-publisher/extension-code",
+  "hook_event_name": "SessionStart",
+  "source": "startup"
+}
+2026-08-27 13:13:05 - Event type: SessionStart
+2026-08-27 13:13:05 - Handling SessionStart
+2026-08-27 13:13:05 - Hook completed successfully
